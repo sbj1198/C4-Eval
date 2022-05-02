@@ -34,8 +34,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/logout" element={<Logout/>}/>
-        <Route path="/orders" element={<Login/>}/>
-        <Route path="/neworder" element={<Login/>}/>
+        <Route path="/orders" element={<ProtectedRoute><Orders/></ProtectedRoute>}/>
+        <Route path="/neworder" element={<ProtectedRoute><NewOrder/></ProtectedRoute>}/>
       </Routes>
     </div>
   );

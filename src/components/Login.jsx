@@ -26,8 +26,8 @@ export const Login = () => {
 
   async function getData(){
     const res = await axios.get("http://localhost:8080/users");
-    setTemp([...temp, res.data]);
-    console.log(temp);
+    // setTemp([...temp, res.data]);
+    console.log(res.data);
     // t.map((e) => (
     //   e.usernam
     // ))
